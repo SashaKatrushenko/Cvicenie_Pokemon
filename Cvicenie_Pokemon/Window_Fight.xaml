@@ -7,15 +7,15 @@
         mc:Ignorable="d"
         Title="Window_Fight" Height="450" Width="800">
     <Grid>
-        <Image Margin="488,0,66,178" Source="/Images/Charizard.png" Stretch="Fill"/>
+        <Image Margin="467,0,87,178" Source="/Images/Charizard.png" Stretch="Fill"/>
         <Image Margin="0,10,410,203" Source="/Images/Pikachu.png" Stretch="Fill"/>
-        <ProgressBar Name="ProgressBar_Hero" HorizontalAlignment="Left" Height="34" Margin="28,257,0,0" VerticalAlignment="Top" Width="302" Foreground="#FF06B018" Maximum="200"/>
-        <ProgressBar Name="ProgressBar_Enemy"  HorizontalAlignment="Left" Height="35" Margin="450,256,0,0" VerticalAlignment="Top" Width="323"/>
-        <Button Content="Light Attack" HorizontalAlignment="Left" Height="46" Margin="28,296,0,0" VerticalAlignment="Top" Width="86" Click="Button_Click" Background="#FF6FE560"/>
-        <Button Content="Medium Attack" HorizontalAlignment="Left" Height="46" Margin="135,296,0,0" VerticalAlignment="Top" Width="88" Click="Button_Click_1" Background="#FFFFF491"/>
-        <Button Content="Hight Attack" HorizontalAlignment="Left" Height="46" Margin="244,296,0,0" VerticalAlignment="Top" Width="86" Click="Button_Click_2" Background="#FFFF9480"/>
-        <Label Name="Label_GameStatus" Content="" HorizontalAlignment="Center" Height="59" Margin="0,10,0,0" VerticalAlignment="Top" Width="206" FontSize="36" FontWeight="Bold"/>
-        <ProgressBar Name="ProgressBar_Energy" HorizontalAlignment="Left" Height="35" Margin="27,365,0,0" VerticalAlignment="Top" Width="302" RenderTransformOrigin="0.5,0.5" Foreground="#FFDEDC01">
+        <ProgressBar Name="ProgressBar_Hero" HorizontalAlignment="Left" Height="34" Margin="28,236,0,0" VerticalAlignment="Top" Width="302" Foreground="#FF06B018" Maximum="200"/>
+        <ProgressBar Name="ProgressBar_Enemy"  HorizontalAlignment="Left" Height="35" Margin="429,235,0,0" VerticalAlignment="Top" Width="322"/>
+        <Button Content="Light Attack" HorizontalAlignment="Left" Height="36" Margin="28,280,0,0" VerticalAlignment="Top" Width="86" Click="Button_Click" Background="#FF6FE560"/>
+        <Button Content="Medium Attack" HorizontalAlignment="Left" Height="36" Margin="135,280,0,0" VerticalAlignment="Top" Width="88" Click="Button_Click_1" Background="#FFFFF491"/>
+        <Button Content="Hight Attack" HorizontalAlignment="Left" Height="36" Margin="244,280,0,0" VerticalAlignment="Top" Width="86" Click="Button_Click_2" Background="#FFFF9480"/>
+        <Label Name="Label_GameStatus" Content="" HorizontalAlignment="Center" Height="43" Margin="0,10,0,0" VerticalAlignment="Top" Width="192" FontSize="20" FontWeight="Bold"/>
+        <ProgressBar Name="ProgressBar_Energy" HorizontalAlignment="Left" Height="35" Margin="27,375,0,0" VerticalAlignment="Top" Width="302" RenderTransformOrigin="0.5,0.5" Foreground="#FFDEDC01">
             <ProgressBar.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -25,5 +25,9 @@
                 </TransformGroup>
             </ProgressBar.RenderTransform>
         </ProgressBar>
+        <Button Content="Heal" HorizontalAlignment="Left" Height="33" Margin="71,326,0,0" VerticalAlignment="Top" Width="216" BorderBrush="Black" Background="#FF3AD4FF" Click="Button_Click_3"/>
+        <Button Content="Restart" HorizontalAlignment="Left" Height="53" Margin="702,0,0,0" VerticalAlignment="Top" Width="98" FontSize="18" FontFamily="Agency FB" Click="Button_Click_4"/>
+        <Label Name="Label_HeroHP" Content="100/100" HorizontalAlignment="Left" Height="22" Margin="28,209,0,0" VerticalAlignment="Top" Width="86"/>
+        <Label Name="Label_EnemyHP" Content="100/100" HorizontalAlignment="Left" Height="22" Margin="673,209,0,0" VerticalAlignment="Top" Width="78"/>
     </Grid>
 </Window>

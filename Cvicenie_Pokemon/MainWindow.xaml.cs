@@ -19,10 +19,8 @@ namespace Cvicenie_Pokemon
         public MainWindow()
         {
             InitializeComponent();
-            Hero myHero = new Hero(100, 100, 10, 100, 10);
-            Enemy enemy = new Enemy(200, 10);
-
-
+            Hero myHero = new Hero(100, 100, 10, 100, 10, 15, 10);
+            Enemy enemy = new Enemy(200, 200, 10);
 
             Window_Fight fight_window = new Window_Fight(myHero, enemy);
             fight_window.Show();
